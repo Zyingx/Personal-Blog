@@ -1,0 +1,48 @@
+video {
+    position: absolute;
+    background: white;
+    right: 0;
+    bottom: 0;
+    width: fit-content; 
+    height: fit-content;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  z-index: 9999;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+}
+
+h1 span {
+    display: block;
+    letter-spacing: -0.25vw;
+    font-size: 10vw;
+}
+
+
+main {
+    background: white;
+    position: relative;
+    padding: 1rem;
+    margin-top: 100vh;
+}
+
+#format {
+    position:absolute;
+    top: 350px;
+    left: 400px;
+    z-index:1;
+}
