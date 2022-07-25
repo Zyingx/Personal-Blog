@@ -5,17 +5,53 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=exo2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap">
 </head>
 <body>
-    <ul>
-        <li><a>Zyingx</a></li>
-        <li style="float:right"><a class="active" href="#home">Home</a></li>
-        <li style="float:right"><a href="#news">Blog</a></li>
-        <li style="float:right"><a href="#contact">Contact</a></li>
-        <li style="float:right"><a href="#about">About Me</a></li>
-      </ul>
-      <img src="randomimg.png" alt="Background" width="100%" height="100%">
+    <nav>
+    <div class="title-container">
+        <a id="title">Zyingx</a>
+    <ul class="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#news">Blog</a></li>
+        <li><a href="#home">Home</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="randomimg.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="randomimg2.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="randomimg3.png" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
 </body>
 
 </html>
