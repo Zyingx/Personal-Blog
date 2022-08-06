@@ -10,6 +10,7 @@ body {
     width: 95%;
     margin: auto;
     clear: both;
+    overflow: hidden;
 }
 
 nav {
@@ -35,7 +36,6 @@ nav {
     color: white;
     font-size: 20px;
 }
-
 
 #title {
     float: left;
