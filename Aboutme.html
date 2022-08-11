@@ -15,24 +15,34 @@
         <ul class="menu">
             <li><a href="Aboutme.html">About Me</a></li>
             <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Blog.html">Gallery</a></li>
             <li><a href="Home.html">Home</a></li>
         </ul>
         </div>
     </nav>
-
-    <div class="container">
-        <section>
-            <div class="box-1">
-                <img src="test1.png" alt="Zying" id="photo">
-                <h1 id="format"> Lorem Ipsum </h1>
-                <h1 id="format2"> Hello, Its me. How are you? The brown fox jump over the lazy dog.</h1>
-            </div>
-            <div class="box-2">Test 1</div>
-            <div class="box-1">Test 2</div>
-        </section>
-    </div>
-</body>
+<script>
+    var i = 0;
+    var images = [];
+    var slideTime = 10000;
     
-    </html>
+    images[0] = 'test1.jpg';
+    images[1] = 'test2.jpg';
+    images[2] = 'test3.jpg';
+    
+    function changePicture() {
+        document.body.style.backgroundImage = "url(" + images[i] + ")";
+    
+        if (i < images.length - 1) {
+            i++;
+        } else {
+            i = 0;
+        }
+        setTimeout(changePicture, slideTime);
+    }
+    
+    window.onload = changePicture;
+</script>
+
 </body>
+
+    </html>
